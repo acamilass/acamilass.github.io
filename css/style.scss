@@ -136,21 +136,25 @@ body {
         text-decoration: none;  
         padding: 1.5rem 4rem; 
         border-radius: 10rem;
+        -webkit-transition: all .2s;
         transition: all .2s;
         font-size: $default-font-size;
     }
     
     &:hover {
+        -webkit-transform: translateY(-.3rem);
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .3);
 
         &::after {
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
     
     &:active {
+        -webkit-transform: translateY(-.1rem);
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .3);
     }
@@ -165,6 +169,7 @@ body {
         width: 100%;
         border-radius: 10rem;
         z-index: -1;
+        -webkit-transition: all .4s;
         transition: all .4s;
     }
     
@@ -179,7 +184,9 @@ body {
     }
            
     &--animated {
+        -webkit-animation: moveInBottom .5s ease-out .75s;
         animation: moveInBottom .5s ease-out .75s;
+        -webkit-animation-fill-mode: backwards;
         animation-fill-mode: backwards;
     }
 }
