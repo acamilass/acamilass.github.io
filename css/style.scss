@@ -264,3 +264,14 @@ body {
     }
 }
 
+@media only screen and (max-width: 500px) {
+   .section-about {
+       padding-top: 20rem;
+   }
+}
+
+@media only screen and (max-width: 770px) {
+    .section-about {
+        padding-top: 25rem;
+    }
+ }

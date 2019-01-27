@@ -349,4 +349,16 @@ body {
 .section-links .row--links a:hover {
   color: #d29fa6;
 }
+
+@media only screen and (max-width: 500px) {
+  .section-about {
+    padding-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .section-about {
+    padding-top: 25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
