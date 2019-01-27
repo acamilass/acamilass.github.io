@@ -220,14 +220,14 @@ body {
 
 .profile-pic {
     width: 70%;
-    margin: 0 10rem;
+    margin: 0 5rem;
     border-radius: 50%;
 }
 
 .paragraph {
     font-size: $default-font-size;
     padding: 2rem 0;
-    margin-right: 2rem;
+    margin-right: 5rem;
     
     &:not(:last-child) {
         margin-bottom: 3rem;
