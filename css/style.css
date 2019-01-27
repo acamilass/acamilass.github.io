@@ -56,6 +56,7 @@ body {
   font-family: "Aleo", sans-serif;
   font-weight: 300;
   line-height: 1.7;
+  color: #55286F;
   padding: 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -307,10 +308,45 @@ body {
 .paragraph {
   font-size: 1.6rem;
   padding: 2rem 0;
-  margin: 0 2rem;
+  margin-right: 2rem;
 }
 
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.section-links {
+  position: relative;
+  padding: 15rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(201, 173, 167, 0.7)), to(rgba(85, 40, 111, 0.7))), url("../images/html-code.png");
+  background-image: linear-gradient(to right bottom, rgba(201, 173, 167, 0.7), rgba(85, 40, 111, 0.7)), url("../images/html-code.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+
+.section-links .row--links {
+  position: absolute;
+  width: 75%;
+  margin: 0 auto;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-links .row--links a {
+  text-decoration: none;
+  color: #E2C2C6;
+}
+
+.section-links .row--links a i {
+  font-size: 9rem;
+  padding: 0 4rem;
+}
+
+.section-links .row--links a:hover {
+  color: #d29fa6;
 }
 /*# sourceMappingURL=style.css.map */

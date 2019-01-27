@@ -5,6 +5,7 @@ $default-font-size: 1.6rem;
 $color-black: #000000;
 $color-purple: #55286F;
 $color-rose: #C9ADA7;
+$color-rose-light: #E2C2C6;
 $color-white: #FFFFFF;
 
 
@@ -24,7 +25,7 @@ body {
     font-family: "Aleo", sans-serif;
     font-weight: 300;
     line-height: 1.7;
-    // color: $color-gray-dark;
+    color: $color-purple;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -223,6 +224,43 @@ body {
     
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+}
+
+.section-links {
+    position: relative;
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-rose, 0.7), 
+        rgba($color-purple, 0.7)), 
+        url("../images/html-code.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+
+    .row--links {
+        position: absolute;
+        width: 75%;
+        margin: 0 auto;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        a {
+            text-decoration: none;
+            color: $color-rose-light;            
+
+            i {
+                font-size: 9rem;
+                padding: 0 4rem;
+            }
+
+            &:hover {
+                color: darken($color-rose-light, 10%);
+            }
+        }
     }
 }
 
