@@ -1,0 +1,32 @@
+----------Introdução----------
+https://medium.com/@js_tut/the-complete-guide-to-scss-sass-49ac053fcde5
+https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
+https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
+https://medium.com/@kylewetton/how-i-stumbled-across-a-niche-hobby-i-never-knew-existed-drawing-and-animating-in-css-f351721f8aba
+https://medium.com/@radicho/drawing-with-css-inside-single-div-container-43227e3cf19d
+https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2
+http://paulcpederson.com/articles/css-for-people-who-hate-css/
+
+
+----------Organizando----------
+https://medium.freecodecamp.org/how-to-better-organize-your-css-architecture-with-oocss-bem-smacss-65e8a5c207c0
+
+
+----------Para consultar----------
+https://css-tricks.com/
+https://cssnewbie.com/
+http://codingheroes.io/resources/
+
+
+----------Cursos------------------
+https://coding-artist.teachable.com/p/how-to-make-pure-css-images (free)
+https://www.udemy.com/course-dashboard-redirect/?course_id=1026604
+https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/
+
+
+----------Helpers----------
+Criar formas com a propriedade clip-path - http://bennettfeely.com/clippy/
+Criar paletas de cores - https://coolors.co/
+Cheat sheet para posicionar com flexbox - https://tburleson-layouts-demos.firebaseapp.com/#/docs
+Procurar inspiração - https://dribbble.com/
+Calculando a especificidade dos seletores - https://specificity.keegan.st/ (pesquisa sobre isso pra entender pq tantas vezes algo fica sobrescrito no css)
