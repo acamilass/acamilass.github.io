@@ -37,7 +37,7 @@ body {
         to right bottom, 
         rgba($color-rose, 0.8), 
         rgba($color-purple, 0.8)), 
-        url("../images/parallax-background.jpeg");
+        url("../images/parallax-background-new.jpeg");
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -205,7 +205,6 @@ body {
     margin-bottom: 8rem;
 }
 
-
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -239,9 +238,9 @@ body {
     padding: 15rem 0;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-rose, 0.7), 
-        rgba($color-purple, 0.7)), 
-        url("../images/html-code.png");
+        rgba($color-rose, 0.9), 
+        rgba($color-purple, 0.9)), 
+        url("../images/html-code-new.jpg");
     background-position: center;
     background-size: cover;
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
