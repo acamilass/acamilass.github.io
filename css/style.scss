@@ -60,6 +60,12 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
+    @include respond(tab-port) {
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    }
+
     &__text-box {
         position: absolute;
         top: 50%;
@@ -222,7 +228,8 @@ body {
     margin-top: -20vh;
 
     @include respond(tab-port) { 
-        padding: 20rem 0 10rem 0;
+        padding: 20rem 0 12rem 0;
+        margin-top: -12vh;
     }
 }
 
@@ -283,6 +290,7 @@ body {
 .section-links {
     position: relative;
     padding: 15rem 0;
+    margin-top: -8rem;
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-rose, 0.9), 
@@ -294,9 +302,15 @@ body {
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     text-align: center;
 
-    
+    @include respond(tab-port) { 
+        -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+
     @include respond(phone) { 
         padding: 28rem 0;
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }
 
     .row--links {
@@ -307,6 +321,10 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
 
+        @include respond(tab-port) { 
+            width: 90%;
+        }
+        
         @include respond(phone) { 
             width: 82%;
         }
