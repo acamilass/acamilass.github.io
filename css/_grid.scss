@@ -1,24 +1,47 @@
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 4rem;
 $gutter-horizontal: 6rem;
+$gutter-horizontal-small: 4rem;
 
 .row {
     max-width: $grid-width;
-    // background-color: #EEE;
     margin: 0 auto;
    
     &:not(:last-child) { // select everything but the last child
         margin-bottom: $gutter-vertical;
+
+        @include respond(phone) { 
+            margin-bottom: $gutter-vertical-small;
+        }
     }
 
-    // @include clearfix;
+    @include respond(phone) { 
+        max-width: 50rem;
+        padding: 0;
+    }
+
+    @include clearfix;
 
     [class^="col-"] {
-        // background-color: blueviolet;
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) { 
+                margin-right: 0;
+                margin-bottom: $gutter-horizontal-small;
+            }
+            
+            @include respond(phone) { 
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(phone) { 
+            width: 100% !important;
         }
     }
 

@@ -1,3 +1,4 @@
+@import "mixins";
 @import "grid";
 
 $default-font-size: 1.6rem;
@@ -19,6 +20,18 @@ $color-white: #FFFFFF;
 
 html {
     font-size: 62.5%;
+
+    @include respond(tab-land) { // <1200
+        font-size: 56.25%; // 1rem = 9px 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) { // <900
+        font-size: 50%; // 1rem = 8px 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12px 12/16 = 75%
+    }
 }
 
 body {
@@ -28,6 +41,10 @@ body {
     color: $color-purple;
     padding: 3rem;
     box-sizing: border-box;
+
+    @include respond(tab-port) { 
+        padding: 0;
+    }
 }
 
 .header {
@@ -68,6 +85,11 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 4rem;
+        }
     }
     
     &--sub {
@@ -77,6 +99,10 @@ body {
         letter-spacing: 1.7rem;
     
         animation: moveInRight 1s ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
     
 }
@@ -192,9 +218,12 @@ body {
 }
 
 .section-about {
-    // background-color: $color-gray-light-1;
-    padding: 25rem 0 50rem 0;
+    padding: 25rem 0 20rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port) { 
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .u-center-text {
@@ -202,7 +231,11 @@ body {
 }
 
 .u-margin-bottom-big {
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
+
+    @include respond(tab-port) { 
+        margin-bottom: 4rem !important;
+    }
 }
 
 .heading-secondary {
@@ -215,12 +248,21 @@ body {
     background-clip: text;
     color: transparent;
     letter-spacing: 2px;
+
+    @include respond(tab-port) { 
+        font-size: 3rem;
+    }
+
 }
 
 .profile-pic {
     width: 70%;
     margin: 0 5rem;
     border-radius: 50%;
+
+    @include respond(phone) { 
+        width: 80%;
+    }    
 }
 
 .paragraph {
@@ -230,6 +272,11 @@ body {
     
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) { 
+        font-size: 2rem;
+        margin: 0 3rem;
     }
 }
 
@@ -245,6 +292,12 @@ body {
     background-size: cover;
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    text-align: center;
+
+    
+    @include respond(phone) { 
+        padding: 28rem 0;
+    }
 
     .row--links {
         position: absolute;
@@ -254,29 +307,38 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
 
+        @include respond(phone) { 
+            width: 82%;
+        }
+
         a {
             text-decoration: none;
-            color: $color-rose-light;            
-
+            color: $color-white; 
+            
             i {
-                font-size: 9rem;
+                font-size: 10rem;
                 padding: 0 4rem;
-            }
 
+                &:not(:last-child) {                   
+                    @include respond(phone) { 
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                // @include respond(tab-port) { 
+                //     font-size: 10rem;
+                // }
+
+                @include respond(phone) { 
+                    font-size: 12rem;
+                }
+
+            }
+    
             &:hover {
                 color: darken($color-rose-light, 10%);
             }
         }
     }
-}
-
-@media only screen and (max-width: 900px) {
-    body {
-        padding: 0;
-    }
- }
-
-@media only screen and (max-width: 600px) {
-   
 }
 
