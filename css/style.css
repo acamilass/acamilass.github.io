@@ -29,14 +29,14 @@ article img {
   height: 50px;
   position: absolute;
   top: 50%;
-  width: 80%;
+  width: 90%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 /* Slider Styling */
 .slider-wrapper {
-  width: 80%;
+  width: 90%;
   overflow: hidden;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -53,8 +53,9 @@ article img {
 
 /*---- SET POSITION FOR SLIDE ----*/
 #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   text-decoration: inherit;
   margin: 0;
   line-height: 5rem;
@@ -64,7 +65,7 @@ article img {
 }
 
 #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after {
-  content: ">";
+  content: "\f105";
   padding: .1rem .1rem;
 }
 
@@ -81,7 +82,7 @@ article img {
 }
 
 #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
-  content: "<";
+  content: "\f104";
   padding: .1rem .1rem;
 }
 
@@ -624,9 +625,9 @@ body {
   width: 70%;
   margin: 0 auto;
   top: 50%;
-  left: 58%;
-  -webkit-transform: translate(-50%, -58%);
-          transform: translate(-50%, -58%);
+  left: 54%;
+  -webkit-transform: translate(-50%, -54%);
+          transform: translate(-50%, -54%);
   display: none;
 }
 

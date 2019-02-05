@@ -31,13 +31,13 @@ article {
     height: 50px;
     position: absolute;
     top: 50%;
-    width: 80%;
+    width: 90%;
     transform: translateY(-50%);
 }
 
 /* Slider Styling */
 .slider-wrapper {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
     transform: translateZ(0);
     transition: all 500ms ease-out;
@@ -50,8 +50,9 @@ article {
 
 /*---- SET POSITION FOR SLIDE ----*/
 %bind-prev-next-button {
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     text-decoration: inherit;
     margin: 0;
     line-height: 5rem;
@@ -62,7 +63,7 @@ article {
 
 %bind-next-button {
     @extend %bind-prev-next-button;
-    content: ">";
+    content: "\f105";
     padding: .1rem .1rem;
 }
 
@@ -80,7 +81,7 @@ article {
 
 %bind-prev-button {
     @extend %bind-prev-next-button;
-    content: "<";
+    content: "\f104";
     padding: .1rem .1rem;
 }
 
