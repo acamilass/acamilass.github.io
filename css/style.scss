@@ -270,15 +270,13 @@ body {
     }
 }
 
-
-@media only screen and (max-width: 500px) {
-   .section-about {
-       padding-top: 20rem;
-   }
-}
-
-@media only screen and (max-width: 770px) {
-    .section-about {
-        padding-top: 25rem;
+@media only screen and (max-width: 900px) {
+    body {
+        padding: 0;
     }
  }
+
+@media only screen and (max-width: 600px) {
+   
+}
+
